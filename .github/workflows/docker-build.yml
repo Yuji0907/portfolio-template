@@ -26,6 +26,7 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_KEY }}
+          port: 2222
           script: |
             docker pull yuji09docker/portfolio-template:latest
             docker stop app || true
